@@ -64,10 +64,6 @@ def selection_sort(array):
       if array[min_idx] > array[j]:
         min_idx = j
     array[i], array[min_idx] = array[min_idx], array[i] 1    
- 1. 
-www.grepper.com
-www.grepper.com
-
 
 # Použití selection sort
 selection_sort(array)
