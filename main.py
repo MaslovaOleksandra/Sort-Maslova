@@ -15,21 +15,20 @@ def bubble_sort(array):
       if array[j] > array[j+1]:
         array[j], array[j+1] = array[j+1], array[j]
 
-# Použití bubble sort
+
 bubble_sort(array)
-print("Po bubble sort:", array)
+print("Bubble sort:", array)
 
 import random
 
 def is_sorted(array):
-  """Zkontroluje, zda je seznam seřazen.
+
 
   Args:
     array: Seznam čísel.
 
   Returns:
     True, pokud je seznam seřazen, jinak False.
-  """
 
   for i in range(0, len(array) - 1):
     if array[i] > array[i+1]:
@@ -37,26 +36,22 @@ def is_sorted(array):
   return True
 
 def bogo_sort(array):
-  """Provede bogo sort (náhodné zaměňování).
+
 
   Args:
     array: Seznam čísel k setřídění.
-  """
 
   while not is_sorted(array):
     random.shuffle(array)
 
-# Použití bogo sort (není doporučeno pro větší pole)
 bogo_sort(array)
-print("Po bogo sort:", array)
+print("Bogo sort:", array)
 
 
 def selection_sort(array):
-  """Provede výběrové třídění seznamu.
 
   Args:
     array: Seznam čísel k setřídění.
-  """
 
   for i in range(len(array)):
     min_idx = i
@@ -65,16 +60,14 @@ def selection_sort(array):
         min_idx = j
     array[i], array[min_idx] = array[min_idx], array[i] 1    
 
-# Použití selection sort
 selection_sort(array)
-print("Po selection sort:", array)
+print("Selection sort:", array)
 
 def insertion_sort(array):
-  """Provede vkládací třídění seznamu.
+
 
   Args:
     array: Seznam čísel k setřídění.
-  """
 
   for i in range(1, len(array)):
     key = array[i]
@@ -84,6 +77,5 @@ def insertion_sort(array):
         j -= 1
     array[j+1] = key
 
-# Použití insertion sort
 insertion_sort(array)
-print("Po insertion sort:", array)
+print("Insertion sort:", array)
