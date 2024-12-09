@@ -1,6 +1,6 @@
 import random
 
-def random_array():
+def random_array(size):
 
   return [random.randint(0, 100) for _ in range(10)]
 
@@ -58,7 +58,7 @@ def selection_sort(array):
     for j in range(i+1, len(array)):
       if array[min_idx] > array[j]:
         min_idx = j
-    array[i], array[min_idx] = array[min_idx], array[i] 1    
+    array[i], array[min_idx] = array[min_idx], array[i] 
 
 selection_sort(array)
 print("Selection sort:", array)
