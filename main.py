@@ -1,3 +1,4 @@
+#Vytvořte pole s 10 přeházenými hodnotami od 0-100
 import random
 
 def random_array(size):
@@ -7,6 +8,7 @@ def random_array(size):
 array = random_array(10)
 print("Neuspořádané pole:", array)
 
+#Vytvořte bubble sort
 def bubble_sort(array):
 
   n = len(array)
@@ -19,22 +21,8 @@ def bubble_sort(array):
 bubble_sort(array)
 print("Bubble sort:", array)
 
-import random
 
-def is_sorted(array):
-
-
-  Args:
-    array: Seznam čísel.
-
-  Returns:
-    True, pokud je seznam seřazen, jinak False.
-
-  for i in range(0, len(array) - 1):
-    if array[i] > array[i+1]:
-      return False
-  return True
-
+#Vytvořte bogo sort
 def bogo_sort(array):
 
 
@@ -47,7 +35,7 @@ def bogo_sort(array):
 bogo_sort(array)
 print("Bogo sort:", array)
 
-
+#Vytvořte selection sort
 def selection_sort(array):
 
   Args:
@@ -63,6 +51,7 @@ def selection_sort(array):
 selection_sort(array)
 print("Selection sort:", array)
 
+#Vytvořte Insertion sort
 def insertion_sort(array):
 
 
